@@ -75,7 +75,7 @@ builder.build(function(err, obj){
     ? standalone
     : conf.name;
 
-  if (standalone && name.indexOf('-') != 0)
+  if (standalone && name.indexOf('-') > -1)
     log('error', 'Hyphen in standalone name: ' + name);
   }
 
